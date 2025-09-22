@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', serif;
+}
+:root {
+    --c1: #300a49;
+    --c2: #bd6bf3;
+    --c3: #bd6bf33f;
+    --c4: #ffff;
+    --border: #e1e1e133;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/img4.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.boxlogin {
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px var(--c1);
+    border: 1px solid var(--border);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.boxlogin h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--c4);
+}
+.boxlogin .inputbox {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 30px 0;
+}
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid var(--c1);
+    border-radius: 40px;
+    font-size: 18px;
+    color: var(--c4);
+    padding: 20px 20px;
+}
+.inputbox input::placeholder {
+    color: var(--c4);
+
+}
+.boxlogin .rememberme {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--c2);
+    padding: -15px 0 15px;
+}
+.rememberme label input {
+    accent-color: var(--c1);
+    text-decoration: none;
+}
+.rememberme a {
+    color: var(--c2);
+    text-decoration: none;
+}
+.rememberme a:hover {
+    text-decoration: underline;
+}
+.boxlogin .btn {
+    width: 100%;
+    height: 45px;
+    background: var(--c1);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    color: var(--c2);
+    box-shadow: 3px 3px var(--c3);
+}
+.boxlogin .linkregi {
+    font-size: 18px;
+    text-align: center;
+    color: var(--c4);
+    margin-top: 20px;
+}
+.linkregi p a {
+    color: var(--c1);
+    font-weight: 600;
+    text-decoration: none;
+}
+.linkregi p a:hover {
+    text-decoration: underline;
+}
